@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple-packet</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Apple packet price planner</h1>
+      <h2>Apple buying data</h2>
+      <div class="input">
+        <form>
+          <label for="cost price for a box of apples"
+            >Cost price for a box of apples</label
+          >
+          <input type="text" class="box_price" name="apples" required /><br />
+          <label for="number of apples in the box"
+            >Number of apples in the box</label
+          >
+          <input
+            type="text"
+            class="number_of_apples"
+            name="apples"
+            required
+          /><br />
+          <label for="packet size">The packet size apples are sold in</label>
+          <input
+            type="text"
+            class="number_of_apples"
+            name="apples"
+            required
+          /><br />
+          <label for="profit">Required profit</label>
+          <input type="text" class="profit" name="apples" required />
+        </form>
+      </div>
+
+      <button type="button" class="calculateBtn">Calculate</button>
+
+      <h2>Apple price calculations</h2>
+      <div class="output">
+        <label for="number of packets">Number of packets</label>
+        <input class="packets" /><br />
+        <label for="cost price">Cost price per apple</label>
+        <input class="price_per_apple" /><br />
+        <label for="packet price">Cost price per packet</label>
+        <input class="packet_price" /><br />
+        <label for="recommended price">Recommended packet price</label>
+        <input class="recommended_price" />
+      </div>
+    </div>
+  </body>
+</html>
