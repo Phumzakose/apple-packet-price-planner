@@ -58,7 +58,10 @@ describe("The Apple Packet Price Planner", function () {
     });
     it("should be able to calculate the price of sold apple packets to make profit", function () {
       let applePrice = applePriceFactory();
-      applePrice.setSel.Apples(10);
+      applePrice.setBoxPrice(30);
+      applePrice.setNumberOfApples(15);
+      applePrice.setSellApples(3);
+      applePrice.setProfit(10);
     });
   });
 });
