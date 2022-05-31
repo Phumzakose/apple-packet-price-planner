@@ -41,8 +41,16 @@ function applePriceFactory() {
     let cost = getBoxPrice() / getNumberOfApples();
     return cost;
   }
-  function totalPrice() {
-    return theApplePrice;
+  function costPerPacket() {
+    let price = appleCost() * 5;
+    return price;
+  }
+  function numberOfPackets() {
+    let apple_Packets = getNumberOfApples() / costPerPacket();
+    return apple_Packets;
+  }
+  function howMuchProfit() {
+    let profit = getSoldApples() * getProfit();
   }
 
   return {
@@ -55,8 +63,10 @@ function applePriceFactory() {
     setProfit,
     getProfit,
     appleCost,
-    totalPrice,
     setPriceOfApple,
     getPriceOfApple,
+    costPerPacket,
+    numberOfPackets,
+    howMuchProfit,
   };
 }

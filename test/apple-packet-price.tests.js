@@ -40,13 +40,25 @@ describe("The Apple Packet Price Planner", function () {
     });
     it("should be able to calculate how much packet of apple cost", function () {
       let applePrice = applePriceFactory();
-      applePrice.setNumberOfApples();
+      applePrice.setBoxPrice(30);
+
+      applePrice.setNumberOfApples(15);
+
+      let packet = applePrice.costPerPacket();
+      assert.equal(10, packet);
     });
     it("should be able to calculate the number of apple packects made from a box", function () {
       let applePrice = applePriceFactory();
+      applePrice.setBoxPrice(30);
+
+      applePrice.setNumberOfApples(30);
+      let packetsNumber = applePrice.numberOfPackets();
+
+      assert.equal(6, packetsNumber);
     });
     it("should be able to calculate the price of sold apple packets to make profit", function () {
       let applePrice = applePriceFactory();
+      applePrice.setSel.Apples(10);
     });
   });
 });
